@@ -1,0 +1,102 @@
+﻿
+body {
+    margin:0px;
+    padding:0px;
+    background-color:#b5b59d;
+}
+
+#page_background 
+{
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:-1;
+}
+
+#header_background {
+    background: url('/Content/Images/header_background.jpg') repeat-x;
+    position:absolute;
+    width:100%;
+    height:130px;
+}
+
+#page, #footer_content 
+{    
+    width:1024px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#page {
+    height:300px;
+}
+
+#header_content {
+    
+}
+
+#header_content #logo {
+    position:absolute;
+    background: url('/Content/Images/helenaPhotography.png');
+    width: 316px;
+    height: 91px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+#header_content #menu {
+    position:absolute;
+    margin-left:375px;
+}
+
+#navigation_menu 
+{
+    list-style-type:none;
+    margin-top:13px;
+}
+
+#navigation_menu a:link, #navigation_menu a:hover, #navigation_menu a:visited  
+{
+    text-decoration:none;
+    font-size:1em;
+    font-family: Trajan Pro;
+    padding-top:5px;
+    color: #6e6e6e;    
+    display:block;
+}
+
+#navigation_menu a:hover 
+{
+    color:#a6a690;
+}
+
+#navigation_menu a.active 
+{
+    font-weight:bold;
+    color:#a09e9e;
+}
+
+#page_content 
+{
+    position:absolute;
+    margin-top:130px;
+}
+
+#footer {
+	margin:0px auto;
+	height:62px;
+	width:100%;
+	bottom:0;
+	z-index: 5;
+	background-color:transparent;
+    background: url('/Content/Images/Footer.png') repeat-x;
+	position:absolute;
+}
+
+
+	
+
+
+
+
+

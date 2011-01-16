@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    <link type="text/css" rel="Stylesheet" href="../../Content/Styles/HelenaPhotographyGlobal.css" />
+    <%--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script> 
+    --%>
+    <script type="text/javascript" src="/Scripts/jquery-1.4.1.min.js"></script>    
+    <asp:ContentPlaceHolder ID="HeaderContent" runat="server">
+    </asp:ContentPlaceHolder>
+    </head>
+<body>
+    <div id="supersized" style="position:absolute;overflow:hidden;"></div> 
+    <div id="header_background" ></div>
+    <div id="page">        
+        <div id="header">
+            <div id="header_content">
+                <div id="logo">
+                          
+                </div>
+                <div id="menu">
+                    <% Html.RenderAction("Menu", "Menu"); %>
+                </div>
+            </div>
+        </div>
+        
+        <div id="page_content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+    </div> 
+    <div id="footer">
+        <% Html.RenderAction("FooterMenu", "Menu"); %>
+    </div>
+</body>
+</html>
+
